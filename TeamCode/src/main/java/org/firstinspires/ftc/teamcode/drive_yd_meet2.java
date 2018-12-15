@@ -59,8 +59,8 @@ public class drive_yd_meet2 extends LinearOpMode{
         //have to take the 2 meshed gears in account; 1 turns motor clockwise
         //turn if xpos > ypos
         if(Math.abs(leftstickx) > Math.abs(leftsticky)){
-            leftDrive.setPower(leftstickx);
-            rightDrive.setPower(leftstickx);
+            leftDrive.setPower(-leftstickx);
+            rightDrive.setPower(-leftstickx);
 
         } else {
             rightDrive.setPower(-leftsticky);
